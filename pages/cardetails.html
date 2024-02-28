@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    </head>
+    <style>
+        body{
+        background:  radial-gradient(circle, rgba(119,128,173,1) 15%, rgba(70,252,222,1) 83%);
+    }
+         header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+.nav_links{
+    list-style: none;
+    color: white;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+    color: white;
+}
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+    color: white;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    text-decoration: none;
+}
+.nav_links li a:hover{
+    color: rgb(105, 191, 234);
+}
+        .img img{
+            width: 40%;
+            border-radius: 8px;
+            margin-top: 13%;
+            margin-left: 9%;
+        }
+        .content{
+            margin-left: 59%;
+            margin-top: -35%;
+        }
+        .content h1{   
+            font-size: 50px;     
+        }
+        .milage h2{
+            width: 55%;
+            border: none;
+            background-color: transparent;
+            border-radius: 6px;
+        }
+        .milage h2:hover{
+            background-color: palevioletred;
+        }
+        *{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 4% 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 20%;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10%;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}     
+
+    </style>
+    <body>
+        <header>
+            <h1 style="color: white; font-weight: bold; font-size: 42px;">Cargage</h1>
+           <nav>
+               <ul class="nav_links">
+                   <li> <a href="index.html">Home</a></li>
+                   <li> <a href="about.html">About</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+               </ul>
+           </nav>
+       </header>
+        <div class="img">
+            <img src="detail1.webp" style="">
+        </div>
+        <div class="content">
+            <h1>TATA NEXON</h1><br><br>
+            <div class="milage" style="margin-top: ;">
+                 
+                <h2 style="width: 50%;"><i class='bx bxs-car'></i>&nbsp&nbsp21 KM / PER LITER</h2><br>
+            </div>
+            <div class="milage">
+                <h2 style="width: 50%;"><i class='bx bxs-car'></i>&nbsp&nbsp5.5 Liter capacity</h2><br>
+            </div>
+            <div class="milage">
+                <h2 style="width: 50%;"><i class='bx bxs-car'></i>&nbsp&nbsp FOUR SEATER</h2><br>
+            </div><br>
+            <div class="pcont">
+                <h2 style="font-size: 30px;"> Features and Speces :</h2><br><br>
+                <ul>
+                    <li style="font-size: 20px;"><i class='bx bx-right-arrow-alt' style="font-size: 20px;"></i>&nbspThe Tata Nexon has 1 Diesel Engine and 1 Petrol Engine on offer.</li><br>
+                    <li style="font-size: 20px;"><i class='bx bx-right-arrow-alt' style="font-size: 20px;"></i>&nbspThe Diesel engine is 1497 cc while the Petrol engine is 1199 cc.</li><br>
+                    <li style="font-size: 20px;"><i class='bx bx-right-arrow-alt' style="font-size: 20px;"></i>&nbspIt is available with Manual & Automatic transmission.Depending </li><br>
+                    <li style="font-size: 20px;"><i class='bx bx-right-arrow-alt' style="font-size: 20px;"></i>&nbspupon the variant and fuel type the Nexon has a mileage of 24.07 kmp </li><br>
+                    <li style="font-size: 20px;"><i class='bx bx-right-arrow-alt' style="font-size: 20px;"></i>&nbspGround clearance of Nexon is 209. The Nexon is a 5 seater 4 cylinder </li><br>
+                    <li style="font-size: 20px;"><i class='bx bx-right-arrow-alt' style="font-size: 20px;"></i>&nbspcar and has length of 3993, width of 1811 and a wheelbase of 2498.</li><br>
+                </ul>
+            </div> 
+        </div><br><br>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Status</a></li>
+                            <li><a href="#">Payment Options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="">www.cargage@gmail.com</a></li>
+                            <li><a href="#">+91 9042001415</a></li>
+                            <li><a href="">11/76 , vagarayampalayam,coimbatore, 641659.</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class='bx bxl-facebook' ></i></a>
+                            <a href="#"><i class='bx bxl-twitter' ></i></a>
+                            <a href="#"><i class='bx bxl-instagram' ></i></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy">
+                <h3 style="color: white; margin-top: 11%; margin-left: 41%;">copyright<i class='bx bx-copyright'></i>2023 reserved</h3>
+            </div>
+       </footer>
+         
+    </body>
+</html>

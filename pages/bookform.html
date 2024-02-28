@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="index.js"></script>
+    </head>
+<style>
+    body{
+        background: linear-gradient(-135deg, #c850c0, #4158d0);
+    }
+    header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+.nav_links{
+    list-style: none;
+    color: white;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+    color: white;
+}
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+    color: white;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    text-decoration: none;
+}
+.nav_links li a:hover{
+    color: rgb(105, 191, 234);
+}
+    .table-box {
+        margin: 40px auto;
+    }
+    .table-row {
+        display: table;
+        width: 80%;
+        margin: 10px auto;
+        font-family: sans-serif;
+        border-radius: 6px;
+        background: radial-gradient(circle, rgba(227,146,181,1) 0%, rgba(148,187,233,1) 100%);
+        padding: 12px 0;
+        color: #fdf9f9;
+        font-size: 15px;
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 50, 0.3);
+
+    }
+
+    .table-cell {
+        margin-left: 5%;
+        font-size: medium;
+        align-items: center;
+
+    }
+
+    .inside-logo {
+        margin-left: 20%;
+
+    }
+
+    .box1 {
+        width: 60%;
+        height: 90%;
+        size: 70%;
+    }
+    .submit {
+
+        margin-top: 10%;
+    }
+
+    .form__button {
+        width: 69%%;
+        padding: 1rem 2rem;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: blue;
+        border: none;
+        border-radius: var(--border-radius);
+        outline: none;
+        cursor: pointer;
+        background: var(--color-primary);
+    }
+
+    .form__button {
+        font: 500 1rem 'Quicksand', sans-serif;
+        text-decoration: none;
+
+    }
+
+    .form__button a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+
+    .form__button a {
+        color: aliceblue;
+    }
+    .fsubmit button{
+        width: 15%;
+        height: 50px;
+        border-radius: 8px;
+        border: none;
+        color: white;
+        background-color: rgb(16, 16, 90);
+    }
+    .fsubmit button:hover{
+        background-color: rgb(20, 72, 118);
+    }
+    .fsubmit button{
+        color: white;
+        font-size: medium;
+        font-display: flex;
+        font-style: normal;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+    .fsubmit button a{
+        text-decoration: none;
+        color: white;
+    }
+</style>
+<body>
+    <header>
+        <h1 style="color: white; font-weight: bold; font-size: 42px;">Cargage</h1>
+       <nav>
+           <ul class="nav_links">
+               <li> <a href="index.html">Home</a></li>
+               <li> <a href="about.html">About</a></li>
+               <li><a href="contact.html">Contact</a></li>
+           </ul>
+       </nav>
+   </header> 
+   <form action="db.php" method="POST">
+    <div class="table-box">
+        <div class="table-row">
+            <div class="table-cell">
+                <center><h1>BOOKING DETAILS</h1></center><br><br>
+                <center><p><b>Name&nbsp:</b><br><br><input type="text" autofocus placeholder="Enter Your Name With Initial" name="name" id="name"
+                        required="" width="100%" style="height: 40px; width: 40%; border-radius: 8px;"></p>
+                <p><b>Phone Number:</b><br><br><input type="number-text" autofocus placeholder="Enter Your phone Number"
+                        name="phone" id="phone" width="100%" style="height: 40px; width: 40%;border-radius: 8px;"></p>
+                        <p><b>ADDRESS&nbsp:</b></p>        
+                        <div class="box1">
+                            <textarea name="text" id="text"cols="60" rows="12" width="40%" style="border-radius: 8px;"></textarea><br>
+                        </div>
+                <p><b>LICENSE NUMBER&nbsp:</b></p> <input type="numbers" autofocus placeholder="License" name="license" id="license"
+                        required="" width="100%" style="height: 40px; width: 40%;border-radius: 8px;">
+                <p><b>NUMBER OF DAYS&nbsp:</b></p><input type="number" autofocus placeholder="Number of days" name="days" id="days"
+                        required="" width="100%" style="height: 40px; width: 40%;border-radius: 8px;">
+                <p><b>NUMBER OF HOURS&nbsp:</b></p><input type="number" autofocus placeholder="Number of days" name="hours" id="hours"
+                            required="" width="100%" style="height: 40px; width: 40%;border-radius: 8px;">
+                            <p><b>FROM DATE&nbsp:</b></p><input type="date" autofocus placeholder="Number of days" name="fdate" id="fdate"
+                                required="" width="100%" style="height: 40px; width: 40%;border-radius: 8px;">
+                                <p><b>TO DATE&nbsp:</b></p><input type="date" autofocus placeholder="Number of days" name="tdate" id="tdate"
+                                    required="" width="100%" style="height: 40px; width: 40%;border-radius: 8px;"></center><br><br>
+                                    <div class="fsubmit" style="margin-left: 550px;">
+                                        <button type="submit" onclick="handelSubmit()">submit</button>
+                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </form>
+</body>
+</head>
+
+</html>

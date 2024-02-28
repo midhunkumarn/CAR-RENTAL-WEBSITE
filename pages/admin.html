@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Ludiflex | Login</title>
+    <script>
+        function myfunction(){
+ var un = document.getElementById("user").value;
+ var pw = document.getElementById("pass").value;
+
+ if(un=="midhunkumar@gmail.com" && pw=="midhun78")
+ {
+    window.location.href="showdata.php";
+ }
+ else{
+    alert("invalid")
+ }
+
+}
+
+    </script>
+
+</head>
+<body>
+   <div class="box">
+    <div class="container">
+
+        <div class="top">
+             
+            <header>Login</header>
+        </div>
+
+        <div class="input-field">
+            <input type="text" class="input" placeholder="Username" id="user">
+            <i class='bx bx-user' ></i>
+        </div>
+
+        <div class="input-field">
+            <input type="Password" class="input" placeholder="Password" id="pass">
+            <i class='bx bx-lock-alt'></i>
+        </div>
+
+        <div class="input-field">
+            <input type="submit" class="submit" value="Login" id="" onclick="myfunction()">
+        </div>
+        </div>
+    </div>
+</div>  
+</body>
+</html>
