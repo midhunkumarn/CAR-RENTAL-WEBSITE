@@ -1,4 +1,5 @@
 # CAR-RENTAL-WEBSITE
+![Screenshot 2023-07-15 113508](https://github.com/midhunkumarn/CAR-RENTAL-WEBSITE/assets/130952023/f146498f-7987-483b-9ae0-ce326d7c21a4)
 
 ![image](https://github.com/midhunkumarn/CAR-RENTAL-WEBSITE/assets/130952023/f6dd4e92-5620-48bd-b948-85329d986da9)
 
